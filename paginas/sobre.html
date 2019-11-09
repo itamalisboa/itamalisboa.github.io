@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Palace Aju Hotel </title>
+    <meta name="description" content="Agência Especializada 
+    Marketing Digitais, Criação de Sites e Aplicativo Mobile" >
+    <meta name="keywords" content="Agência digital, Marketing, Sites">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Itamá S. Lisboa">
+    <link rel="stylesheet" href="../css/style_outros.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="../imgs/icon.png">
+  </head>
+  <body>
+    <header class="cabecalho container">
+      <a href="../index.html"><h1 class="logo">Palace Aju - Especilista em te fazer bem!</h1></a>
+      <button class="btn-menu bg-gradiente"><i class="fa fa-bars fa-lg"></i> </button>
+      <nav class="menu">
+        <a class="btn-close"> <i class="fa fa-times"></i> </a>
+        <ul>
+          <li> <a href="../index.html">Home</a> </li>
+          <li> <a href="#">Clientes</a> </li>
+          <li> <a href="#">Serviços</a> </li>
+          <li> <a href="#">Blog</a> </li>
+          <li> <a href="#">Quem Somos</a> </li>
+          <li> <a href="#">Contato</a> </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="banner container">
+      <div class="title">
+          <h2>Reserve Sua Hospedagem</h2>
+          <h3>Temos o que há de melhor e mais confortável, além de moderno e com preços que cabem no seu bolso!</h3>
+      </div>
+      <div class="buttons">
+        <button class="btn btn-cadastrar bg-white radius">Cadastrar <i class="fa fa-arrow-circle-right"></i> </button>
+        <button type="submit" onclick="window.open('../index.html')" class="btn btn-sobre bg-black radius">Home <i class="fa fa-question-circle"></i> </button>
+      </div>
+    </div>
+
+    <!--SERVIÇOS DO SITE-->
+
+    <main class="servicos container">
+      <article class="servico bg-white radius">
+        <a href="#"> <center><img class="img_sobre" src="../imgs/bg_sobre.jpg" alt="Quarto Casal"> </center> </a>
+        <div class="inner radius">
+          <a href="#"> Sobre </a>
+          <p>
+            O hotel Palace Aju foi criado em 2019, pelo seus fundadores o senhor Itamá e o senhor Cleverton, 
+            é um hotel novo porém com grande capacidade de modernização, com uma equipe dedicada e empenhada 
+            e pronta para fazer o melhor pelos seus clientes.<br/>
+            Localizado na Orla de Atalaia, em um lugar belíssimo, o Palace Aju apresenta acomodações 
+            funcionais para até quatro pessoas e conta com uma loja de conveniências que fica aberta 24 horas por dia.
+            Os quartos possuem ar-condicionado, Wi-Fi e televisão. Alguns quartos são adaptados para viajantes 
+            com mobilidade reduzida. Os hóspedes do Palace Aju podem usar o estacionamento privativo mediante o 
+            pagamento de uma taxa extra. No bufê de café da manhã são servidos pães, croissants, frutas 
+            e sucos, entre outros itens.<br/>
+            O restaurante Palace fica no térreo, proporcionando aos clientes uma vista para a área de piscinas. 
+            O trajeto de carro até o Parque da Cidade demora aproximadamente 20 minutos. 
+            Já o Museu Da Gente Sergipana leva apenas 10 minutinhos de carro para chegar lá. Temos o melhor para te oferecer, então venha conhecer
+            nossas acomodações qeu você não irá se arrepender!
+          </p>
+        </div>
+      </article>
+
+    </main>
+
+    <!--NEWSLETTER-->
+    
+    <section class="newsletter container bg-black">
+      <h2> Inscreva-se agora! </h2>
+      <h3> Receba novidades, ofertas e muito mais! </h3>
+      <form>
+        <input class="bg-black radius" type="email" name="email" placeholder="Seu email">
+        <button class="bg-white radius"> Cadastrar </button>
+      </form>
+    </section>
+
+    <footer class="rodape container bg-gradiente">
+      <div class="social-icons">
+        <a href="#"> <i class="fa fa-facebook"></i> </a>
+        <a href="#"> <i class="fa fa-twitter"></i> </a>
+        <a href="#"> <i class="fa fa-google"></i> </a>
+        <a href="#"> <i class="fa fa-instagram"></i> </a>
+        <a href="#"> <i class="fa fa-envelope"></i> </a>
+      </div>
+      <p class="copyright">
+        Copyright &copy; Palace Aju 2019. Todos os direitos reservados.
+      </p>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous">
+    </script>
+    <!--Script para o menu mobile-->
+    <!--Abrir e Fechar o Menu-->
+    <script>
+      $(".btn-menu").click(function(){
+        $(".menu").show()
+      });
+      $(".btn-close").click(function(){
+        $(".menu").hide()
+      });
+    </script>
+  </body>
+</html>

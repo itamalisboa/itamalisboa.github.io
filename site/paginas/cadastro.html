@@ -44,24 +44,49 @@
 
     <main class="servicos container">
       <article class="servico bg-white radius">
-        <a href="#"> <center><img class="img_sobre" src="../imgs/bg_sobre.jpg" alt="Quarto Casal"> </center> </a>
         <div class="inner radius">
-          <a href="#"> Sobre </a>
-          <p>
-            O hotel Palace Aju foi criado em 2019, pelo seus fundadores o senhor Itamá e o senhor Cleverton, 
-            é um hotel novo porém com grande capacidade de modernização, com uma equipe dedicada e empenhada 
-            e pronta para fazer o melhor pelos seus clientes.<br/>
-            Localizado na Orla de Atalaia, em um lugar belíssimo, o Palace Aju apresenta acomodações 
-            funcionais para até quatro pessoas e conta com uma loja de conveniências que fica aberta 24 horas por dia.
-            Os quartos possuem ar-condicionado, Wi-Fi e televisão. Alguns quartos são adaptados para viajantes 
-            com mobilidade reduzida. Os hóspedes do Palace Aju podem usar o estacionamento privativo mediante o 
-            pagamento de uma taxa extra. No bufê de café da manhã são servidos pães, croissants, frutas 
-            e sucos, entre outros itens.<br/>
-            O restaurante Palace fica no térreo, proporcionando aos clientes uma vista para a área de piscinas. 
-            O trajeto de carro até o Parque da Cidade demora aproximadamente 20 minutos. 
-            Já o Museu Da Gente Sergipana leva apenas 10 minutinhos de carro para chegar lá. Temos o melhor para te oferecer, então venha conhecer
-            nossas acomodações qeu você não irá se arrepender!
-          </p>
+          <a href="#"> Reservar Hospedagem </a>
+          <div class="formulario">
+            <form name="formcadastro" action="exemple.php" method="POST" onsubmit="return validacao()" />
+            <div class="form-group">
+                <label>Nome</label>
+                <input class="form-control" type="text" name="nome" placeholder="Nome" />
+              </div>
+              <div class="form-group">
+                <label>CPF</label>
+                <input class="form-control" type="number" name="cpf" placeholder="CPF" />
+              </div>
+              <div class="form-group">
+              <label>Sexo: </label>
+                <input type="radio" name="sexo" value="F" checked="checked"/> Feminino
+                <input type="radio" name="sexo" value="M" /> Masculino
+              </div>
+              <div class="form-group">
+                <label>Logradouro</label>
+                <input class="form-control" type="text" name="endereco" placeholder="Endereço" />
+              </div>
+              <div class="form-group">
+                <label>Cidade</label>
+                <input class="form-control" type="text" name="cidade" placeholder="Cidade" />
+              </div>
+              <div class="form-group">
+                <label>Data de Nascimento</label>
+                <input class="form-control" type="date" name="data_nascimento" placeholder="00/00/0000" />
+              </div>
+              <div class="form-group">
+                <label>Contato</label>
+                <input class="form-control" type="tel" name="contato" placeholder="Contato" />
+              </div>
+              <div class="form-group">
+              <label>Perfil</label><br/>
+              <textarea class="form-control" name="perfil" rows="10" cols="50"></textarea>
+              </div>
+              <div class="btn">
+                <input class="btn_form radius" type="submit" name="enviar" value="Salvar" />
+                <input class="btn_form radius" type="reset" name="limpar" value="Limpar" />
+            </div>
+            </form>
+          </div>
         </div>
       </article>
 
@@ -106,5 +131,6 @@
         $(".menu").hide()
       });
     </script>
+    <script src="../js/validacao.js"></script>
   </body>
 </html>
